@@ -1,8 +1,9 @@
-yum -y install ImageMagick
-yum -y install ghostscript
-yum -y install git
-yum -y install tesseract
-yum -y install leptonica
+yum -y install ImageMagick ghostscript git tesseract leptonica
+
+cd /usr/local/src
+wget https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm
+rpm -ivh rpmfusion-free-release-7.noarch.rpm
+yum -y install ffmpeg
 
 #
 # ffmpeg2theora
