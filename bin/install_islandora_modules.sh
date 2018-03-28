@@ -49,9 +49,7 @@ drush dl -y features
 drush dl -y features_extra
 drush dl -y strongarm
 
-#get the theme. suggesting pixture_reloaded as the base theme because it's adaptive and works with color module.
-drush dl -y adaptivetheme
-drush dl -y pixture_reloaded
+#get the bootstrap theme
 drush dl -y bootstrap
 drush dl -y jquery_update
 
@@ -89,11 +87,11 @@ drush en -y quicktabs_tabstyles
 #***default theme settings
 #############################################################################
 
-#drush en -y pixture_reloaded_williams
-#drush vset theme_default pixture_reloaded_williams
+drush en -y bootstrap
+drush vset theme_default bootstrap
 # NOTE: SETUPNOTE- this is (currently) specific to Williams college; ideally this would be a generic islandora-compatible theme that could be easily customized to your institution and each site/project
 # drush vset theme_settings --format=json '{"toggle_logo":1,"toggle_name":0,"toggle_slogan":0,"toggle_node_user_picture":0,"toggle_comment_user_picture":0,"toggle_comment_user_verification":0,"toggle_favicon":0,"toggle_main_menu":1,"toggle_secondary_menu":1,"default_logo":1,"logo_path":"","logo_upload":"","default_favicon":1,"favicon_path":"","favicon_upload":""}'
-#drush vset theme_seven_settings --format=json '{"toggle_logo":1,"toggle_name":0,"toggle_slogan":0,"toggle_node_user_picture":0,"toggle_comment_user_picture":0,"toggle_comment_user_verification":0,"toggle_favicon":1,"toggle_main_menu":1,"toggle_secondary_menu":1,"default_logo":1,"logo_path":"","logo_upload":"","default_favicon":1,"favicon_path":"","favicon_upload":""}'
+# drush vset theme_seven_settings --format=json '{"toggle_logo":1,"toggle_name":0,"toggle_slogan":0,"toggle_node_user_picture":0,"toggle_comment_user_picture":0,"toggle_comment_user_verification":0,"toggle_favicon":1,"toggle_main_menu":1,"toggle_secondary_menu":1,"default_logo":1,"logo_path":"","logo_upload":"","default_favicon":1,"favicon_path":"","favicon_upload":""}'
 
 # drush en -y node_export_features
 drush en -y fe_block
@@ -153,7 +151,6 @@ git clone https://github.com/Islandora/islandora_solution_pack_newspaper.git
 git clone https://github.com/Islandora/islandora_solution_pack_pdf.git
 git clone https://github.com/Islandora/islandora_solution_pack_video.git
 git clone https://github.com/Islandora/islandora_paged_content.git
-git clone https://github.com/Islandora/islandora_jwplayer.git
 git clone https://github.com/Islandora/objective_forms.git
 git clone https://github.com/Islandora/php_lib.git
 git clone https://github.com/Islandora/islandora_xml_forms.git
@@ -235,7 +232,6 @@ drush en -y islandora-bookmark
 # FIX NOTE: islandora-bookmark not enabled
 
 drush en -y islandora_internet_archive_bookreader
-drush en -y islandora_jwplayer
 
 drush en -y islandora_large_image
 ##
