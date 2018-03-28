@@ -1,10 +1,10 @@
-yum -y install gcc
-yum -y install gcc-c++
-yum -y install autoconf
-yum -y install java-1.6.0-openjdk.x86_64
-yum -y install ImageMagick
+#yum -y install gcc
+#yum -y install gcc-c++
+#yum -y install autoconf
+#yum -y install java-1.6.0-openjdk.x86_64
+#yum -y install ImageMagick
 yum -y install ghostscript
-yum -y install ant
+#yum -y install ant
 yum -y install git
 
 #
