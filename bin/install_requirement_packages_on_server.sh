@@ -15,11 +15,10 @@ install -m 755 /usr/local/src/ffmpeg2theora-0.29.linux64.bin /usr/local/bin/ffmp
 #
 ## Dependancy software installation of fits.sh
 #
-wget -N -P /usr/local/src https://fits.googlecode.com/files/fits-0.6.2.zip
-unzip fits-0.6.2.zip
-cd fits-0.6.2
-./configure --prefix=/usr/local/fits-0.6.2
-make install
+wget -N -P /usr/local/src https://projects.iq.harvard.edu/files/fits/files/fits-latest.zip
+unzip fits-latest.zip
+mv fits-*.*.*/ /usr/local/
+cd /usr/local/fits-*.*.*/
 
 # link fits.sh 
-ln -s /usr/local/fits-0.6.2/fits.sh /usr/local/bin/fits.sh
+ln -s /usr/local/fits-1.2.0/fits.sh /usr/local/bin/fits.sh
