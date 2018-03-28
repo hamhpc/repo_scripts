@@ -1,4 +1,4 @@
-yum -y install ImageMagick ghostscript git tesseract leptonica
+yum -y install ImageMagick ghostscript git tesseract leptonica java
 
 cd /usr/local/src
 
