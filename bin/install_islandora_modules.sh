@@ -4,6 +4,12 @@
 # Arguments
 #
 #  $1 = fedora server name  (ie fedora.domain.edu)
+
+if [ -z "$1" ]; then 
+  echo "Please specify the fedora server name as an argument"
+  exit
+fi
+
 #
 # install drupal modules
 #
