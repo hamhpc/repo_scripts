@@ -1,6 +1,7 @@
 yum -y install ImageMagick ghostscript git tesseract leptonica
 
 cd /usr/local/src
+
 wget https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm
 rpm -ivh rpmfusion-free-release-7.noarch.rpm
 yum -y install ffmpeg
@@ -15,7 +16,6 @@ install -m 755 /usr/local/src/ffmpeg2theora-0.29.linux64.bin /usr/local/bin/ffmp
 ## Dependancy software installation of fits.sh
 #
 wget -N -P /usr/local/src https://fits.googlecode.com/files/fits-0.6.2.zip
-cd /usr/local/src
 unzip fits-0.6.2.zip
 cd fits-0.6.2
 ./configure --prefix=/usr/local/fits-0.6.2
