@@ -130,6 +130,7 @@ git clone https://github.com/Islandora/tuque.git
 #git clone https://github.com/thatcher/openseadragon.git
 wget https://github.com/openseadragon/openseadragon/releases/download/v2.3.1/openseadragon-bin-2.3.1.tar.gz
 tar -zxvf openseadragon-bin-2.3.1.tar.gz
+mv openseadragon-bin-2.3.1 openseadragon
 rm openseadragon-bin-2.3.1.tar.gz
 #
 # internet book reader
