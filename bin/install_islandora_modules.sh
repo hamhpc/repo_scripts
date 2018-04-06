@@ -347,6 +347,10 @@ drush en -y islandora_simple_workflow
 drush vset islandora_batch_java "/usr/bin/java"
 
 #
+# fix permissions
+#
+chmod -R g-w *
+#
 # update drupal
 #
 drush pm-update
