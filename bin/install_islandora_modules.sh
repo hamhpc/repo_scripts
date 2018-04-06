@@ -127,7 +127,10 @@ unzip 1.x.zip
 # get Tuque and OS
 #
 git clone https://github.com/Islandora/tuque.git
-git clone https://github.com/thatcher/openseadragon.git
+#git clone https://github.com/thatcher/openseadragon.git
+wget https://github.com/openseadragon/openseadragon/releases/download/v2.3.1/openseadragon-bin-2.3.1.tar.gz
+tar -zxvf openseadragon-bin-2.3.1.tar.gz
+rm openseadragon-bin-2.3.1.tar.gz
 #
 # internet book reader
 #
