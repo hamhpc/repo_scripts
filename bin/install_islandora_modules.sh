@@ -265,7 +265,7 @@ drush vset islandora_video_make_mp4_locally "1"
 drush vset islandora_video_make_ogg_locally "1"
 drush vset islandora_video_make_thumbnail_locally "1"
 drush vset islandora_video_retain_original "1"
-drush vset --format=json islandora_video_viewers '{"name":{"none":"none","islandora_jwplayer":"islandora_jwplayer"},"default":"islandora_jwplayer"}'
+drush vset --format=json islandora_video_viewers '{"name":{"none":"none","islandora_videojs":"islandora_videojs"},"default":"islandora_videojs"}'
 
 
 drush en -y islandora_xacml_api
@@ -310,7 +310,7 @@ drush vset islandora_solr_request_handler "standard"
 drush vset islandora_solr_search_boolean "user"
 drush vset islandora_solr_secondary_display --format=json '{"csv":0}'
 drush vset islandora_solr_tabs__active_tab "edit-default-display-settings"
-drush vset islandora_solr_url "http://$1:8080/solr"
+drush vset islandora_solr_url "http://$1:8091/solr"
 
 
 
@@ -346,4 +346,4 @@ drush vset islandora_batch_java "/usr/bin/java"
 #
 # update drupal
 #
-drush up
+drush pm-update
