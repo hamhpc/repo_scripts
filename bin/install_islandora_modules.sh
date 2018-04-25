@@ -347,6 +347,9 @@ drush en -y islandora_simple_workflow
 
 drush vset islandora_batch_java "/usr/bin/java"
 
+# install git_deploy 
+drush -y dl git_deploy
+drush -y en git_deploy
 #
 # fix permissions
 #
